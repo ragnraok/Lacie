@@ -1,5 +1,6 @@
 package com.lacie.processing;
 
+import com.ragnarok.jparseutil.dataobject.AnnotatedObject;
 import com.ragnarok.jparseutil.dataobject.CodeInfo;
 
 import java.util.Set;
@@ -23,5 +24,5 @@ public interface RoundEnvironment {
      * @param annotationClassName the annotatation class name, must be fully qualified 
      * @return
      */
-    Set<Object> getElementAnnotationedWith(String annotationClassName);
+    Set<? extends AnnotatedObject> getElementAnnotationedWith(String annotationClassName);
 }
