@@ -11,13 +11,7 @@ import java.util.Set;
  * which makes the processor can query for information about the annotation
  */
 public interface RoundEnvironment {
-
-    /**
-     * init this RoundEnvironment from a {@link CodeInfo}, which the parse result 
-     * of a codebase
-     * @param code
-     */
-    void initFromCodeInfo(CodeInfo code);
+    
 
     /**
      * get the object annotationed with {@param annotationClassName}
@@ -25,4 +19,11 @@ public interface RoundEnvironment {
      * @return
      */
     Set<? extends AnnotatedObject> getElementAnnotationedWith(String annotationClassName);
+
+    /**
+     * get the {@link CodeInfo} represent this codebase
+     * @return
+     */
+    CodeInfo getRootCodeInfo();
+    
 }
