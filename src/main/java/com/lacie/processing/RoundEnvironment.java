@@ -18,7 +18,7 @@ public interface RoundEnvironment {
      * @param annotationClassName the annotatation class name, must be fully qualified 
      * @return
      */
-    Set<? extends AnnotatedObject> getElementAnnotationedWith(String annotationClassName);
+    Set<? extends AnnotatedObject> getElementAnnotatedWith(String annotationClassName);
 
     /**
      * get the {@link CodeInfo} represent this codebase

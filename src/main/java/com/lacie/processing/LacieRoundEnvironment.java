@@ -20,8 +20,8 @@ public class LacieRoundEnvironment implements RoundEnvironment {
     }
     
     @Override
-    public Set<? extends AnnotatedObject> getElementAnnotationedWith(String annotationClassName) {
-        Log.d(TAG, "getElementAnnotationedWith, annotationClassName: %s", annotationClassName);
+    public Set<? extends AnnotatedObject> getElementAnnotatedWith(String annotationClassName) {
+        Log.d(TAG, "getElementAnnotatedWith, annotationClassName: %s", annotationClassName);
         return null;
     }
 
